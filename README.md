@@ -21,5 +21,5 @@ Instal menggunakan Python
 
 ## Tangkapan layar
 
-![Tangkapan layar aplikasi](https://i.ibb.co.com/DwRyRFj/asfasf.png)
+![Tangkapan layar aplikasi](https://i.ibb.co.com/6WqnLjM/asdf.png)
 "# SEED-App-Mine-SEED" 
