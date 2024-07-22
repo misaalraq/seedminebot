@@ -111,9 +111,9 @@ def catch_worm():
             elif response.status_code == 400:
                 print(f"{Fore.RED+Style.BRIGHT}[ Worms ]: Enam ditangkap")
             elif response.status_code == 404:
-                print(f"{Fore.RED+Style.BRIGHT}[ Worms ]: Berikut ini tidak ditemukan. Response: {response.json()}")
+                print(f"{Fore.RED+Style.BRIGHT}[ Worms ]: Berikut ini tidak ditemukan. Response; {response.json()}")
             else:
-                print(f"{Fore.RED+Style.BRIGHT}[ Worms ]: Kesalahan lainnya. Status code: {response.status_code}. Response: {response.json()}")
+                print(f"{Fore.RED+Style.BRIGHT}[ Worms ]: Kesalahan lainnya. Status code; {response.status_code}. Response: {response.json()}")
         else:
             print(f"{Fore.RED+Style.BRIGHT}[ Worms ]: Cacing telah ditangkap sebelumnya")
     else:
