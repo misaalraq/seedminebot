@@ -288,12 +288,12 @@ def main():
 
                     # Cek status code dari response
                     if response.status_code == 200:
-                        print(f"{Fore.GREEN+Style.BRIGHT}[ Claim ]: Klaim Berhasil NJING")
+                        print(f"{Fore.GREEN+Style.BRIGHT}[ Claim ]: Klaim Berhasil")
                     elif response.status_code == 400:
                         # Mendapatkan response JSON
                         response_data = response.json()
                         # Mencetak pesan dari response
-                        print(f"{Fore.RED+Style.BRIGHT}[ Claim ]: Klaim gagal GOBLOK")
+                        print(f"{Fore.RED+Style.BRIGHT}[ Claim ]: Klaim gagal")
                     else:
                         print("Terjadi kesalahan, status code:", response.status_code)
 
