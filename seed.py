@@ -10,19 +10,7 @@ import requests
 
 
 def print_welcome_message():
-    print(r"""
-      _______
-    /        /|
-   /        / |
-  /________/  |
- |        |   |
- | BABI   |  /
- |        | /
- ---------
-""")
-    print(Fore.GREEN + Style.BRIGHT + "Seed BOT")
-    print(Fore.GREEN + Style.BRIGHT + "Claimer")
- 
+    print(Fore.GREEN + Style.BRIGHT + "Seed BOT Claimer")
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -182,7 +170,7 @@ def upgrade_storage():
         if response.status_code == 200:
             return '[ Upgrade storage ]: Sukses'
         else:
-            return '[ Upgrade storage ]: Saldo tidak mencukupi, MATALU MINUS?'
+            return '[ Upgrade storage ]: Saldo tidak mencukupi'
     else:
         return None  # Mengembalikan None jika pengguna memilih 'n'
 
@@ -194,7 +182,7 @@ def upgrade_mining():
         if response.status_code == 200:
             return '[ Upgrade mining ]: Sukses'
         else:
-            return '[ Upgrade mining ]: Saldo tidak mencukupi, MATALU MINUS?'
+            return '[ Upgrade mining ]: Saldo tidak mencukupi'
     else:
         return None  # Mengembalikan None jika pengguna memilih 'n'
 
@@ -206,7 +194,7 @@ def upgrade_holy():
         if response.status_code == 200:
             return '[ Upgrade holy ]: Sukses'
         else:
-            return '[ Upgrade holy ]: Saldo tidak mencukupi, MATALU MINUS?'
+            return '[ Upgrade holy ]: Saldo tidak mencukupi'
     else:
         return None  # Mengembalikan None jika pengguna memilih 'n'
 # Modifikasi fungsi upgrade untuk menerima parameter konfirmasi
@@ -216,7 +204,7 @@ def upgrade_storage(confirm):
         if response.status_code == 200:
             return '[ Upgrade storage ]: Sukses'
         else:
-            return '[ Upgrade storage ]: Saldo tidak mencukupi, MATALU MINUS?'
+            return '[ Upgrade storage ]: Saldo tidak mencukupi'
     else:
         return None  # Mengembalikan None jika pengguna memilih 'n'
 
@@ -226,7 +214,7 @@ def upgrade_mining(confirm):
         if response.status_code == 200:
             return '[ Upgrade mining ]: Sukses'
         else:
-            return '[ Upgrade mining ]: Saldo tidak mencukupi, MATALU MINUS?'
+            return '[ Upgrade mining ]: Saldo tidak mencukupi'
     else:
         return None  # Mengembalikan None jika pengguna memilih 'n'
 
@@ -236,7 +224,7 @@ def upgrade_holy(confirm):
         if response.status_code == 200:
             return '[ Upgrade holy ]: Sukses'
         else:
-            return '[ Upgrade holy ]: Saldo tidak mencukupi, MATALU MINUS?'
+            return '[ Upgrade holy ]: Saldo tidak mencukupi'
     else:
         return None  # Mengembalikan None jika pengguna memilih 'n'
 
