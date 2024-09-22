@@ -252,10 +252,10 @@ def main():
     tokens = load_credentials()  # Memuat daftar token
     
     # Meminta konfirmasi upgrade sekali saja sebelum loop
-    confirm_storage = input("Tingkatkan memori secara otomatis? (y/n): ")
-    confirm_mining = input("Peningkatan eksploitasi otomatis? (y/n): ")
-    confirm_holy = input("Tingkatkan versi suci secara otomatis? (y/n): ")
-    confirm_task = input("Menyelesaikan tugas secara otomatis? (y/n): ")
+    confirm_storage = input("Tingkatkan Storage secara otomatis? (y/n): ")
+    confirm_mining = input("TIgnkatkan eksploitasi otomatis? (y/n): ")
+    confirm_holy = input("Tingkatkan Holy Water secara otomatis? (y/n): ")
+    confirm_task = input("Menyelesaikan Tasks secara otomatis? (y/n): ")
     while True:
         # try:
         # Memanggil fungsi upgrade berdasarkan konfirmasi awal
@@ -301,7 +301,7 @@ def main():
                     catch_worm()
                     if confirm_task.lower() == 'y':
                         get_tasks()
-            for i in range(30, 0, -1):
+            for i in range(10800, 0, -1):
                 sys.stdout.write(f"\r{Fore.CYAN+Style.BRIGHT}============ Selesai, harap tunggu ya {i} Detik lagi.. ============")
                 sys.stdout.flush()
                 time.sleep(1)
