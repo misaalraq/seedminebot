@@ -21,7 +21,7 @@ def print_welcome_message():
  ---------
 """)
     print(Fore.GREEN + Style.BRIGHT + "Seed BOT")
-    print(Fore.GREEN + Style.BRIGHT + "ANJING BABI NGENTOT BANGSAT")
+    print(Fore.GREEN + Style.BRIGHT + "Claimer")
  
 
 def clear_console():
@@ -264,10 +264,10 @@ def main():
     tokens = load_credentials()  # Memuat daftar token
     
     # Meminta konfirmasi upgrade sekali saja sebelum loop
-    confirm_storage = input("Tingkatkan memori secara otomatis KONTOL? (y/n): ")
-    confirm_mining = input("Peningkatan eksploitasi otomatis PEPEQ? (y/n): ")
-    confirm_holy = input("Tingkatkan versi suci secara otomatis ANJING? (y/n): ")
-    confirm_task = input("Menyelesaikan tugas secara otomatis BABI? (y/n): ")
+    confirm_storage = input("Tingkatkan memori secara otomatis? (y/n): ")
+    confirm_mining = input("Peningkatan eksploitasi otomatis? (y/n): ")
+    confirm_holy = input("Tingkatkan versi suci secara otomatis? (y/n): ")
+    confirm_task = input("Menyelesaikan tugas secara otomatis? (y/n): ")
     while True:
         # try:
         # Memanggil fungsi upgrade berdasarkan konfirmasi awal
@@ -314,7 +314,7 @@ def main():
                     if confirm_task.lower() == 'y':
                         get_tasks()
             for i in range(30, 0, -1):
-                sys.stdout.write(f"\r{Fore.CYAN+Style.BRIGHT}============ Selesai, harap tunggu ya ANJING {i} Detik lagi.. ============")
+                sys.stdout.write(f"\r{Fore.CYAN+Style.BRIGHT}============ Selesai, harap tunggu ya {i} Detik lagi.. ============")
                 sys.stdout.flush()
                 time.sleep(1)
             print()  # Cetak baris baru setelah hitungan mundur selesai
